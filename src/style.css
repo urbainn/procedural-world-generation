@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+.info-box {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    border-radius: 0.5em;
+    font-family: sans-serif;
+    color: rgb(26, 26, 27);
+}
+
+.data-box {
+    bottom: 1em;
+    right: 1em;
+}
+
+.controls-box {
+    bottom: 1em;
+    left: 1em;
+}
+
+.info-box .info__title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.info-box .info__content span {
+    font-weight: bold;
+}
+
+.mouse-coordinates {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.2em 0.7em;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal .modal__content {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-family: sans-serif;
+    color: rgb(26, 26, 27);
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow: auto;
+    width: clamp(300px, 50vw, 500px);
+}
+
+.modal .modal__content h2 {
+    margin: 0 0 1em 0;
+}
+
+.modal .modal__content .modal__content__item h3 {
+    margin: 0.6em 0 0 0;
+}
+
+.modal .modal__content .modal__content__item h4 {
+    font-weight: normal;
+    margin: 0;
+    color:rgb(79, 79, 79);
+}
+
+.modal .modal__content .modal__content__item input {
+    margin: 0.5em 0;
+}
